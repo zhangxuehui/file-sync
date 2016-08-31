@@ -647,7 +647,6 @@ class MainHandler(BaseHandler):
     def post(self):
         self.doProcess(callback=self.onWaiting)
     def doProcess(self,callback):
-#        self.write("DLNA Server is running...")
         try:
             #a = 10/0
             dom = impl.createDocument(None, 'result', None)
@@ -707,7 +706,7 @@ def main():
 
 
 if __name__ == "__main__":
-    print "DLNA Server Started..."
+    print "File Sync Server Started..."
     main()
     #http_server.listen(8888)
     #tornado.ioloop.IOLoop.instance().start()
